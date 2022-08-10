@@ -54,8 +54,8 @@ impl Contract {
             owner_id,
             NFTContractMetadata {
                 spec: NFT_METADATA_SPEC.to_string(),
-                name: "Example NEAR non-fungible token".to_string(),
-                symbol: "EXAMPLE".to_string(),
+                name: "Nhien Token".to_string(),
+                symbol: "NHN".to_string(),
                 icon: Some(DATA_IMAGE_SVG_NEAR_ICON.to_string()),
                 base_uri: None,
                 reference: None,
@@ -63,6 +63,7 @@ impl Contract {
             },
         )
     }
+
 
     #[init]
     pub fn new(owner_id: AccountId, metadata: NFTContractMetadata) -> Self {
